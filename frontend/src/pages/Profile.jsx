@@ -6,7 +6,7 @@ export default function Profile({ token }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/auth/profile", {
+      .get("https://first-85us.onrender.com/api/auth/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUser(res.data))
