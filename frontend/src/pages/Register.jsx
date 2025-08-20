@@ -6,7 +6,7 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/auth/register", form);
+    await axios.post("https://first-85us.onrender.com/api/auth/register", form);
     alert("Registered! Now login.");
   };
 
